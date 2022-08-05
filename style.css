@@ -32,7 +32,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
   text-align: center;
 }
 
@@ -153,8 +153,12 @@ footer p {
 @media screen and (min-width: 480px) {
   header {
     display: flex;
+    /* flex-direction: row; */
     justify-content: space-between;
-    padding: 0 30px;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
   }
 
   header h1 {
@@ -169,6 +173,7 @@ footer p {
   header nav ul li a:hover {
     color: white;
   }
+
   .group {
     display: flex;
     flex-direction: row;
@@ -177,6 +182,7 @@ footer p {
     flex: 1;
     margin: 10px;
     align-self: center;
+    flex-wrap: wrap
   }
   
   .item-double {
